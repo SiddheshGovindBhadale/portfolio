@@ -1,0 +1,105 @@
+.projects_section {
+    max-width: 1196px;
+    width: 100%;
+    margin: 60px auto;
+}
+
+.projects_section .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.875rem;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.projects_section .main .box {
+    max-width: 585px;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+}
+
+.projects_section .main .box .projects_small_heading {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 150%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FF6542;
+    margin-bottom: 8px;
+}
+
+.projects_section .main .box .projects_heading {
+    max-width: 455.24px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.625rem;
+    line-height: 150%;
+    text-transform: capitalize;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.projects_section .main .box .projects_para {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.75);
+    margin-bottom: 8px;
+}
+
+.projects_section .main .box .projects_para span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.projects_section .main .box .projects_btn {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    gap: 8px;
+    background: linear-gradient(90deg, #F64C72 0%, #FF6542 100%);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.75rem;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 24px 0;
+}
+
+@media screen and (max-width:866px) {
+    .projects_section .main {
+        grid-template-columns: 1fr;
+    }
+
+    .projects_section .main .box {
+        margin: auto;
+    }
+
+    .projects_section .main .box .projects_small_heading {
+        font-size: 0.885rem;
+    }
+
+    .projects_section .main .box .projects_heading {
+        font-size: 1.4rem;
+    margin-bottom: 16px;
+    }
+    
+    .projects_section .main .box .projects_para {
+        font-size: 0.875rem;
+    }
+  }

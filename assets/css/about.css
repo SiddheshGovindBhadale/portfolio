@@ -1,0 +1,120 @@
+/* about css */
+.about_me_section {
+    margin: 6.25rem 0.938rem;
+}
+
+
+.about_me_section_container {
+    max-width: 1197px;
+    margin: auto;
+}
+
+.about_me_section_container .top {
+    max-width: 1197px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 0.938rem;
+    margin-bottom: 2rem;
+}
+
+.about_me_section_container .top .up {
+    max-width: 348px;
+    max-height: 496px;
+}
+
+.about_me_section_container .top .up img {
+    width: 348px;
+    height: 496px;
+}
+
+.about_me_section_container .top .down {
+    max-width: 786px;
+}
+
+.about_me_section_heading {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.625rem;
+    line-height: 150%;
+    text-transform: capitalize;
+    color: #000000;
+    margin-bottom: 2rem;
+}
+
+.about_me_section_para {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: rgba(0, 0, 0, 0.75);
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width:1181px) {
+    .about_me_section_container .top {
+        gap: 1.25rem;
+    }
+}
+
+@media screen and (max-width:1114px) {
+    .about_me_section_container .top {
+        margin-bottom: 1.125rem;
+    }
+
+    .about_me_section_para {
+        margin-bottom: 1.125rem;
+        font-size: 1.063rem;
+    }
+}
+
+@media screen and (max-width:973px) {
+    .about_me_section_container .top {
+        margin-bottom: 1rem;
+    }
+
+    .about_me_section_heading {
+        font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    }
+
+    .about_me_section_para {
+        margin-bottom: 1rem;
+    }
+}
+@media screen and (max-width:723px) {
+    .about_me_section_container .top {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.875rem;
+    }
+
+    .about_me_section_container .top .up {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    .about_me_section_container .top .up img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+/* about technology */
+.about_technology{
+    padding: 1.25rem 1.5rem !important;
+}
+
+
+
+/* action section */
+.about_action .action_para{
+    margin-bottom: 0.5rem !important;
+}
+.about_action .action_heading{
+    margin-bottom: 0.75rem !important;
+}

@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Animated Step Progress Bar</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arial:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <!-- UniIcon CDN Link  -->
+
+    <!-- custome css -->
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <style type="text/css">
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+        }
+
+        @font-face {
+
+            font-family: pop;
+
+            src: url(./Fonts/Poppins-Medium.ttf);
+
+        }
+
+
+        .main {
+
+            width: 100%;
+
+            height: 100vh;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            font-family: pop;
+
+            flex-direction: column;
+
+        }
+
+        .head {
+
+            text-align: center;
+
+        }
+
+        .head_1 {
+
+            font-size: 30px;
+
+            font-weight: 600;
+
+            color: #333;
+
+        }
+
+        .head_1 span {
+
+            color: #ff4732;
+
+        }
+
+        .head_2 {
+
+            font-size: 16px;
+
+            font-weight: 600;
+
+            color: #333;
+
+            margin-top: 3px;
+
+        }
+
+        ul {
+
+            display: flex;
+
+            margin-top: 80px;
+
+        }
+
+        ul li {
+
+            list-style: none;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+        }
+
+        ul li .icon {
+
+            font-size: 35px;
+
+            color: #ff4732;
+
+            margin: 0 60px;
+
+        }
+
+        ul li .text {
+
+            font-size: 14px;
+
+            font-weight: 600;
+
+            color: #ff4732;
+
+            margin-bottom: 0;
+
+        }
+
+
+        /* Progress Div Css  */
+
+
+        ul li .progress {
+
+            width: 30px;
+
+            height: 30px;
+
+            border-radius: 50%;
+
+            background-color: rgba(68, 68, 68, 0.781);
+
+            margin: 14px 0;
+
+            display: grid;
+
+            place-items: center;
+
+            color: #fff;
+
+            position: relative;
+
+            cursor: pointer;
+
+        }
+
+        .progress::after {
+            content: "" !important;
+            position: absolute !important;
+            width: 125px !important;
+            height: 5px !important;
+            display: block;
+            background-color: rgba(68, 68, 68, 0.781);
+            right: 30px !important;
+        }
+
+        .one1::after {
+
+            width: 0 !important;
+
+            height: 0 !important;
+
+        }
+
+        ul li .progress .uil {
+
+            display: none;
+
+        }
+
+        ul li .progress p {
+
+            font-size: 13px;
+            margin-bottom: 0px;
+        }
+
+
+        /* Active Css  */
+
+
+        ul li .active {
+
+            background-color: #ff4732;
+
+            display: grid;
+
+            place-items: center;
+
+        }
+
+        li .active::after {
+
+            background-color: #ff4732;
+
+        }
+
+        ul li .active p {
+
+            display: none;
+
+        }
+
+        ul li .active .uil {
+
+            font-size: 20px;
+
+            display: flex;
+
+        }
+
+
+        /* Responsive Css  */
+
+
+        @media (max-width: 980px) {
+
+            ul {
+
+                flex-direction: column;
+
+            }
+
+            ul li {
+
+                flex-direction: row;
+
+            }
+
+            ul li .progress {
+
+                margin: 0 30px;
+
+            }
+
+            .progress::after {
+
+                width: 5px !important;
+
+                height: 55px !important;
+
+                bottom: 30px;
+
+                left: 50%;
+
+                transform: translateX(-50%);
+
+                z-index: -1;
+
+            }
+
+            .one::after {
+
+                height: 0 !important;
+
+            }
+
+            ul li .icon {
+
+                margin: 15px 0;
+
+            }
+
+        }
+
+
+        @media (max-width:600px) {
+
+            .head .head_1 {
+
+                font-size: 24px;
+
+            }
+
+            .head .head_2 {
+
+                font-size: 16px;
+
+            }
+
+        }
+
+        .discription {
+            max-width: 700px;
+            width: 100%;
+            /* border: 1px solid red; */
+            margin: 70px 10px 30px 10px;
+            padding: 30px 20px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .discription h3 {
+            font-family: 'Oswald';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.3rem;
+            line-height: 150%;
+            text-transform: capitalize;
+            color: #000000;
+            margin-bottom: .5rem;
+        }
+
+        .discription p {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 150%;
+            color: rgba(0, 0, 0, 0.75);
+        }
+    </style>
+</head>
+
+<body>
+    <!--loader-->
+    <div id="mains">
+        <div class="bg">
+            <div class="loader"></div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="navbarcontainer">
+            <div class="navbar-content">
+                <div class="navbar-brand">
+                    <img class="blue-white-dental-kids-logo-1-icon" alt="logo" src="assets/img/logo/white.png" />
+                </div>
+                <div class="myBtn" onclick="toggle()">
+                    <span></span>
+                </div>
+                <div class="navbar-menu links">
+                    <a href="index.html" class="navbar-link">Home</a>
+                    <a href="about.html" class="navbar-link">About Me</a>
+                    <a href="services.html" class="navbar-link">My Services</a>
+                    <a href="portfolio.html" class="navbar-link">Portfolio</a>
+                    <a href="contact.html" class="navbar-link">Contact Me</a>
+                    <a href="seeAllProjects.html" class="navbar-link" id="your_projrcts">Your Projects</a>
+                    <div id="myTrackProjectBtn">
+                        <a href="#" class="button4" id="logout" data-toggle="modal" data-target="#loginForm">
+                            <span class="my-portfolio" id="login_text_btn">track your project</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main">
+
+
+        <div class="head">
+
+            <p class="head_1">Animated Step <span>Progress Bar</span></p>
+
+            <p class="head_2">Using Html, Css & JavaScript</p>
+
+        </div>
+
+
+        <ul id="steps">
+
+            <li onclick="changeText('Add To Cart','siddhesh')">
+                <i class="icon uil uil-capture"></i>
+                <div class="progress one1">
+                    <p>1</p>
+                    <i class="uil uil-check"></i>
+                </div>
+                <p class="text">Add To Cart</p>
+            </li>
+
+            <li onclick="changeText('Fill Details','test')">
+
+                <i class="icon uil uil-clipboard-notes"></i>
+
+                <div class="progress two">
+
+                    <p>2</p>
+
+                    <i class="uil uil-check"></i>
+
+                </div>
+
+                <p class="text">Fill Details</p>
+
+            </li>
+
+            <li>
+
+                <i class="icon uil uil-credit-card"></i>
+
+                <div class="progress three">
+
+                    <p>3</p>
+
+                    <i class="uil uil-check"></i>
+
+                </div>
+
+                <p class="text">Make Payment</p>
+
+            </li>
+
+            <li>
+
+                <i class="icon uil uil-exchange"></i>
+
+                <div class="progress four">
+
+                    <p>4</p>
+
+                    <i class="uil uil-check"></i>
+
+                </div>
+
+                <p class="text">Order in Progress</p>
+
+            </li>
+
+            <li>
+
+                <i class="icon uil uil-map-marker"></i>
+
+                <div class="progress five">
+
+                    <p>5</p>
+
+                    <i class="uil uil-check"></i>
+
+                </div>
+
+                <p class="text">Order Arrived</p>
+
+            </li>
+
+        </ul>
+
+        <div class="discription">
+            <h3 id="disTitle">Make Payment33</h3>
+            <p id="disText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus minus similique quam
+                eveniet, consectetur itaque sequi non tenetur quod odio veniam nulla adipisci iste! Illo corrupti saepe
+                autem ad quo?</p>
+        </div>
+    </div>
+
+
+
+    <script src="assets/js/trackProject.js"></script>
+    <script src="assets/js/login.js"></script>
+    <script>
+        verify()
+    </script>
+    <!-- <script type="text/javascript">
+        const one = document.querySelector(".one1");
+
+        const two = document.querySelector(".two");
+
+        const three = document.querySelector(".three");
+
+        const four = document.querySelector(".four");
+
+        const five = document.querySelector(".five");
+
+
+        one.onclick = function () {
+
+            one.classList.add("active");
+
+            two.classList.remove("active");
+
+            three.classList.remove("active");
+
+            four.classList.remove("active");
+
+            five.classList.remove("active");
+
+        }
+
+
+        two.onclick = function () {
+
+            one.classList.add("active");
+
+            two.classList.add("active");
+
+            three.classList.remove("active");
+
+            four.classList.remove("active");
+
+            five.classList.remove("active");
+
+        }
+
+        three.onclick = function () {
+
+            one.classList.add("active");
+
+            two.classList.add("active");
+
+            three.classList.add("active");
+
+            four.classList.remove("active");
+
+            five.classList.remove("active");
+
+        }
+
+        four.onclick = function () {
+
+            one.classList.add("active");
+
+            two.classList.add("active");
+
+            three.classList.add("active");
+
+            four.classList.add("active");
+
+            five.classList.remove("active");
+
+        }
+
+        five.onclick = function () {
+
+            one.classList.add("active");
+
+            two.classList.add("active");
+
+            three.classList.add("active");
+
+            four.classList.add("active");
+
+            five.classList.add("active");
+
+        }
+    </script> -->
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+#login-form-wrap h2 {
+  font-weight: 300;
+  text-align: center;
+  margin: 30px 0 30px 0;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 150%;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+#login-form-wrap p {
+  position: relative;
+}
+
+
+
+#login-form-wrap {
+  background-color: #fff;
+  min-width: 300px;
+  /* max-width: 350px; */
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+  padding: 20px 0 0 0;
+  border-radius: 4px;
+  box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.2);
+}
+
+#login-form-wrap #login-form {
+  padding: 0 20px;
+}
+
+#login-form-wrap input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 4px;
+}
+
+#login-form-wrap #email,
+#login-form-wrap #password {
+  width: 100%;
+  padding: 0 0 0 10px;
+  margin: 0;
+  color: #8a8b8e;
+  border: 1px solid #c2c0ca;
+  font-style: normal;
+  font-size: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  display: inline-block;
+  background: none;
+}
+
+#login-form-wrap #email:focus,
+#login-form-wrap #password:focus {
+  border-color: #3ca9e2;
+}
+
+#login-form-wrap #email:focus:invalid,
+#login-form-wrap #password:focus:invalid {
+  color: #cc1e2b;
+  border-color: #cc1e2b;
+}
+
+#login-form-wrap #email:valid~.validation,
+#login-form-wrap #password:valid~.validation {
+  display: block;
+  border-color: #0C0;
+}
+
+#login-form-wrap #email:valid~.validation span,
+#login-form-wrap #password:valid~.validation span {
+  background: #0C0;
+  position: absolute;
+  border-radius: 6px;
+}
+
+#login-form-wrap #email:valid~.validation span:first-child,
+#login-form-wrap #password:valid~.validation span:first-child {
+  top: 30px;
+  left: 14px;
+  width: 20px;
+  height: 3px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#login-form-wrap #email:valid~.validation span:last-child #password:valid~.validation span:last-child {
+  top: 35px;
+  left: 8px;
+  width: 11px;
+  height: 3px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#login-form-wrap .validation {
+  display: none;
+  position: absolute;
+  content: " ";
+  height: 60px;
+  width: 30px;
+  right: 15px;
+  top: 0px;
+}
+
+#login-form-wrap input[type="submit"] {
+  border: none;
+  display: block;
+  background: linear-gradient(90deg, #F64C72 0%, #FF6542 100%);
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  font-size: 18px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+#login-form-wrap input[type="submit"]:hover {
+  background-color: #ff9b17;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#login-form-wrap #create-account-wrap {
+  background-color: #eeedf1;
+  color: #8a8b8e;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 0 0 4px 4px;
+}
+
+#loginForm .close{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#loginForm .modal-dialog {
+  max-width: 400px;
+}

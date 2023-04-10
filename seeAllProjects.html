@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font links -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arial:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+
+    <!-- boostrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- BOXICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- custome css -->
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/services.css">
+    <link rel="stylesheet" href="assets/css/seeProject.css">
+
+    <title>Portfolio - Projects</title>
+</head>
+
+<body id="top">
+    <!--loader-->
+    <div id="mains">
+        <div class="bg">
+            <div class="loader"></div>
+        </div>
+    </div>
+    
+    <nav class="navbar">
+        <div class="navbarcontainer">
+            <div class="navbar-content">
+                <div class="navbar-brand">
+                    <img class="blue-white-dental-kids-logo-1-icon" alt="logo" src="assets/img/logo/white.png" />
+                </div>
+                <div class="myBtn" onclick="toggle()">
+                    <span></span>
+                </div>
+                <div class="navbar-menu links">
+                    <a href="index.html" class="navbar-link">Home</a>
+                    <a href="about.html" class="navbar-link">About Me</a>
+                    <a href="services.html" class="navbar-link">My Services</a>
+                    <a href="portfolio.html" class="navbar-link">Portfolio</a>
+                    <a href="contact.html" class="navbar-link">Contact Me</a>
+                    <a href="seeAllProjects.html" class="navbar-link" id="your_projrcts">Your Projects</a>
+                    <div id="myTrackProjectBtn">
+                        <a href="#" class="button4" id="logout" data-toggle="modal" data-target="#loginForm">
+                            <span class="my-portfolio" id="login_text_btn">track your project</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- hero section -->
+    <div class="hero_section">
+        <div class="main_container">
+            <div class="hero_content">
+                <h1 class="hero_heading">
+                    see your projects
+                </h1>
+                <!-- <a href="#" class="hero_btn">GET STARTED</a> -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- prjects section -->
+    <section class="projects">
+        <div class="projects_section">
+            <div class="main" id="boxess">
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="top">
+                <div class="info">
+                    <a href="mailto:siddheshbhadale@gmail.com?subject = Know more about your services&body = Message"
+                        class="contact">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span class="siddheshbhadalegmailcom">siddheshbhadale@gmail.com</span>
+                    </a>
+                </div>
+                <div class="links_social">
+                    <a href="https://www.linkedin.com/in/siddhesh-bhadale-a3ab3b21a/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/siddhesh.bhadale/" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=7738963715&text=Hello, more information!"
+                        target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="bottom">
+                <span class="company-name-all">© 2023 Siddhesh Bhadale. All rights reserved</span>
+                <div class="terms-of-use-parent">
+                    <a href="#">Terms Of Use</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#top" class="scrollup" id="scroll-up">
+        <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+    </a>
+
+
+
+    <!-- boostrap javascript link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- navbar js -->
+    <script src="assets/js/navbar.js"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- custume js -->
+    <script src="assets/js/custume.js"></script>
+    <script src="assets/js/seeProject.js"></script>
+    <script src="assets/js/login.js"></script>
+
+    <script>
+        verify()
+        showData()
+    </script>
+</body>
+
+</html>

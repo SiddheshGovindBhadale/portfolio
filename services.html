@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font links -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arial:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+
+    <!-- boostrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- BOXICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- custome css -->
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/services.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+
+    <title>Portfolio - Services</title>
+</head>
+
+<body id="top">
+    <!--loader-->
+    <div id="mains">
+        <div class="bg">
+            <div class="loader"></div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="navbarcontainer">
+            <div class="navbar-content">
+                <div class="navbar-brand">
+                    <img class="blue-white-dental-kids-logo-1-icon" alt="logo" src="assets/img/logo/white.png" />
+                </div>
+                <div class="myBtn" onclick="toggle()">
+                    <span></span>
+                </div>
+                <div class="navbar-menu links">
+                    <a href="index.html" class="navbar-link">Home</a>
+                    <a href="about.html" class="navbar-link">About Me</a>
+                    <a href="services.html" class="navbar-link">My Services</a>
+                    <a href="portfolio.html" class="navbar-link">Portfolio</a>
+                    <a href="contact.html" class="navbar-link">Contact Me</a>
+                    <a href="seeAllProjects.html" class="navbar-link" id="your_projrcts">Your Projects</a>
+                    <div id="myTrackProjectBtn">
+                        <a href="#" class="button4" id="logout"  data-bs-toggle="modal" data-bs-target="#loginForm">
+                            <span class="my-portfolio" id="login_text_btn">track your project</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div id="login-form-wrap">
+                    <h2>Login</h2>
+                    <div id="login-form">
+                        <p>
+                            <input type="text" id="email" name="compmanyName" placeholder="User ID " required><i
+                                class="validation"><span></span><span></span></i>
+                        </p>
+                        <p>
+                            <input type="password" id="password" name="password" placeholder="Password" required><i
+                                class="validation"><span></span><span></span></i>
+                        </p>
+                        <p>
+                            <input type="submit" id="login" value="Login" onclick="submit()">
+                        </p>
+
+                    </div>
+                    <div id="create-account-wrap">
+                        <!-- <p>Don't have an accout? <a href="#">Create One</a>
+               <p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- hero section -->
+    <div class="hero_section">
+        <div class="main_container">
+            <div class="hero_content">
+                <h1 class="hero_heading">
+                    my services
+                </h1>
+                <p class="hero_para">
+                    There are plenty of people looking for a services like you. Let’s build and grow your business so
+                    that they can find you.
+                </p>
+                <!-- <a href="#" class="hero_btn">GET STARTED</a> -->
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- my services -->
+    <div class="services">
+        <div class="services_container">
+            <div class="left">
+                <span class="small_heading">my services</span>
+                <h2 class="services_heading">i provide custome web and app solution</h2>
+                <p class="services_para">
+                    I help you get more sales, clients and position them as an expert
+                    with their strategically built website & app
+                </p>
+                <a href="contact.html" class="services_button">contact me</a>
+            </div>
+
+            <div class="right">
+                <div class="box">
+                    <img class="box_img" alt="" src="assets/img/services/web.png" />
+                    <div class="box_content">
+                        <div class="box_icon">
+                            <img alt="" src="assets/img/icon/web.svg" />
+                        </div>
+                        <div class="bottom">
+                            <h3 class="box_heading">web design + devlopment</h3>
+                            <p class="box_para">
+                                I am experienced developer who are passionate about creating custom websites tailored to
+                                meet your specific needs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img class="box_img" alt="" src="assets/img/services/app.png" />
+                    <div class="box_content">
+                        <div class="box_icon">
+                            <img alt="" src="assets/img/icon/android.svg" />
+                        </div>
+                        <div class="bottom">
+                            <h3 class="box_heading">app design + devlopment</h3>
+                            <p class="box_para">
+                                I am experienced developer who are passionate about creating custom apps tailored to
+                                meet
+                                your specific needs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- features -->
+    <section class="features">
+        <div class="feartures_container">
+            <h3 class="sub_title">How Does It Work</h3>
+            <h2 class="portfolio_heading">We'll Go Through These 4 Easy Steps</h2>
+
+            <div class="features_boxes">
+                <div class="box">
+                    <div class="box_icon">
+                        <img src="assets/img/icon/graph-up-arrow.jpeg" alt="">
+                    </div>
+                    <h2 class="box_heading">Sales machine</h2>
+                    <p class="box_para">With a website that is built to sell, you get your potential leads to call, sign
+                        up, or purchase a service from your business. I can turn your website into a sales machine that
+                        works 24/7.</p>
+                </div>
+
+                <div class="box">
+                    <div class="box_icon">
+                        <img src="assets/img/icon/storytelling.png" alt="">
+                    </div>
+                    <h2 class="box_heading">Tell your story</h2>
+                    <p class="box_para">I ensure your website design is perfectly aligned with your brand, delivers
+                        messages and tells your story and converts them into paying customers.</p>
+                </div>
+
+                <div class="box">
+                    <div class="box_icon">
+                        <img src="assets/img/icon/credibility.png" alt="">
+                    </div>
+                    <h2 class="box_heading">Build Credibility</h2>
+                    <p class="box_para">A website gives you the opportunity to tell potential customers what you are
+                        about and why you deserve their trust and confidence.</p>
+                </div>
+
+                <div class="box">
+                    <div class="box_icon">
+                        <img src="assets/img/icon/easy-fast.png" alt="">
+                    </div>
+                    <h2 class="box_heading">Fast & Easy to Use</h2>
+                    <p class="box_para">I make sure your website is fast and easy to navigate so that no visitor leaves
+                        your site confused and frustrated and becomes your ammbassdor.</p>
+                </div>
+
+                <div class="box">
+                    <div class="box_icon">
+                        <img src="assets/img/icon/professional.png" alt="">
+                    </div>
+                    <h2 class="box_heading">Look Professional</h2>
+                    <p class="box_para">Stand out from the rest, tell your customers why they should trust you. The
+                        website I build helps in making you look pro.</p>
+                </div>
+
+                <div class="box">
+                    <div class="box_icon">
+                        <img src="assets/img/icon/deliver_information.png" alt="">
+                    </div>
+                    <h2 class="box_heading">Deliver Inforamtion</h2>
+                    <p class="box_para">Provide a quick and easy way of giving info to your customers. List your opening
+                        hours, contact info, show images of your location or products and use forms to facilitate
+                        inquiries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- why you work with me -->
+    <section class="why_me">
+        <div class="why_me_container">
+            <div class="left">
+                <div class="top">
+                    <h2 class="why_me_heading">Why should you work with me</h2>
+                    <p class="why_me_para">Still wondering what makes me better than 99 other freelancers and why should
+                        you work with me? Here’s why:</p>
+                </div>
+                <div class="bottom">
+                    <div class="point">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>I am not like other designers who are desperate to start the project without taking the
+                            time to understand your business and goals.</span>
+                    </div>
+
+                    <div class="point">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>I care about your business and the results I must deliver. I insist on getting to know you
+                            and your business so that I can create a website that speaks to your customers and most
+                            importantly sell. </span>
+                    </div>
+
+                    <div class="point">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>My clients and I become friends. I am fun, casual, enthusiastic and always excited to help
+                            my clients with every tiny details.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="assets/img/services/app.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- process steps -->
+    <div class="steps">
+        <div class="step_container">
+            <h3 class="sub_title">How Does It Work</h3>
+            <h2 class="portfolio_heading">We'll Go Through These 4 Easy Steps</h2>
+            <div class="steps_box">
+                <div class="box">
+                    <div class="box_head">
+                        <div class="no">
+                            <span>01</span>
+                        </div>
+                        <h3 class="box_heading">Consultation</h3>
+                    </div>
+                    <p class="box_para">
+                        We will hop on as many consultation calls as it takes and discuss your business requirements,
+                        pain
+                        points, struggles and goals. I will diagnose your main problems and come up with the exact
+                        solution.
+                    </p>
+                </div>
+                <div class="box">
+                    <div class="box_head">
+                        <div class="no">
+                            <span>02</span>
+                        </div>
+                        <h3 class="box_heading">Strategy</h3>
+                    </div>
+                    <p class="box_para">
+                        I will develop a growth and website, app strategy and explain it to you to confirm if that works
+                        for
+                        you. We will then move ahead to design your website, app with a solid success strategy.
+                    </p>
+                </div>
+                <div class="box">
+                    <div class="box_head">
+                        <div class="no">
+                            <span>03</span>
+                        </div>
+                        <h3 class="box_heading">Design</h3>
+                    </div>
+                    <p class="box_para">
+                        I will get your design preferences and research your competition. I will then design your dream
+                        website, app while getting your approval at each step so that your website, app doesn’t come as
+                        a
+                        surprise.
+                    </p>
+                </div>
+                <div class="box">
+                    <div class="box_head">
+                        <div class="no">
+                            <span>04</span>
+                        </div>
+                        <h3 class="box_heading">Development</h3>
+                    </div>
+                    <p class="box_para">
+                        Once your design is finalized and you have a visual of your website & app, I will start building
+                        it
+                        on a suitable platform for ease of use and scalability, then we are ready to celebrate.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="after_completed">
+            After I’ve completed the build and double checked everything alongside
+            your approval, it’s time to launch your website, app. I will
+            personally be available to celebrate and cheers you at the launch of
+            your business site, app. Besides, I will also provide you short and
+            easy training videos on how you can add content to your website, app
+            or make minor updates yourself.
+        </div>
+    </div>
+
+
+
+
+    <!-- testimonial section -->
+    <div class="testimonial">
+        <h3 class="sub_title">testimonial</h3>
+        <h2 class="portfolio_heading">what my client say</h2>
+
+        <div class="swiper myTestimonial">
+            <div class="swiper-wrapper">
+                <div class="testimonial_box swiper-slide">
+                    <div class="left">
+                        <div class="quote">
+                            <img class="vector-icon" alt="" src="assets/img/icon/vector.svg" />
+                        </div>
+
+                        <div class="testimonial_text">
+                            <div class="review">
+                                “I recently had the pleasure of working with Siddhesh to create my HR services website,
+                                and I must say, I am beyond impressed with the results.
+
+                                Overall, I am extremely satisfied with the level of service and quality of work that
+                                Siddhesh provided. I highly recommend their web development services to anyone looking
+                                to create a standout online presence. Thank you, Siddhesh, for helping me take my
+                                business to the next level!”
+                            </div>
+                            <div class="client_details">
+                                <img class="profile_photo" alt="" src="assets/img/testimonial/client_1.jpeg" />
+                                <div class="details">
+                                    <h3 class="name">Sendil Kumar</h3>
+                                    <span class="profession">founder & ceo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <img alt="" src="assets/img/portfolio/pro_3.jpeg" />
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+
+
+
+    <!-- FAQ section -->
+    <section class="faq_section">
+        <div class="faq_container">
+            <h3 class="sub_title">FAQ</h3>
+            <h2 class="portfolio_heading">Frequently Asked Questions</h2>
+
+            <div class="faq_boxes" id="faq">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What kind of companies and businesses are you working with?
+                        </button>
+                    </h2>
+
+                    <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                        data-bs-parent="#faq">
+                        <div class="accordion-body">
+                            I have worked for a wide variety of businesses ranging from small start-ups to medium sized
+                            established businesses. The industries and business areas I have worked with include
+                            Education,
+                            coaching, investing, real estate, local businesses, E-Commerse, personal sites and
+                            service based entrepreneurs.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            How much time will you take to build a website or app? </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Actually, the time I need to build a website or App will vary depending upon the industries
+                            and
+                            businesses I work with. It also depends on the quality of design, number of pages, different
+                            components, and features the customer requires. For small projects usually take 3 weeks and
+                            for medium and large projects it can take upto 6-8 weeks to ensure you get the best in
+                            class.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                            How much does it cost to build a website?
+                        </button>
+                    </h2>
+                    <div id="collapse3" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            The total cost to build a website depends upon the features and complexity of the project
+                            but for a ballpark figure, it can range from $399 - $10,000+.<br><br>
+
+                            Small sites usually range between $399-2000, medium $2k-5k and for large enterprises can be
+                            upwards of $10k.<br><br>
+
+                            The more the budget is, the more freedom I have, to research and build the best site in your
+                            industry.<br><br>
+
+                            Since I am a web design + devloper freelancer, my rates are usually more affordable than web
+                            agencies.
+                            Besides, I could also give you personalized attention to your project which you can rarely
+                            find with agencies who work on heaps of projects simultaneously.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse00" aria-expanded="true" aria-controls="collapse00">
+                            How much does it cost to build a app?
+                        </button>
+                    </h2>
+                    <div id="collapse00" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            The total cost to build a app depends upon the features and complexity of the project
+                            but for a ballpark figure, it can range from $610 - $10,000+.<br><br>
+
+                            Small apps usually range between $610-2000, medium $2k-5k and for large enterprises can be
+                            upwards of $10k.<br><br>
+
+                            The more the budget is, the more freedom I have, to research and build the best app in your
+                            industry.<br><br>
+
+                            Since I am a web & app design + devloper freelancer, my rates are usually more affordable
+                            than app
+                            agencies.
+                            Besides, I could also give you personalized attention to your project which you can rarely
+                            find with agencies who work on heaps of projects simultaneously.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                            How does the payment process work?
+                        </button>
+                    </h2>
+                    <div id="collapse4" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Yes! I have made the payment process simpler and affordable. For every website & app
+                            project, the
+                            payment is split into 3 parts: 30% deposit to book your slot in my production calendar, 35%
+                            in the middle of the project, and 35% at the end of the project.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                            What costs should I expect other than website design services?
+                        </button>
+                    </h2>
+                    <div id="collapse5" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Hosting: It’s the place where you build website files that are stored on a server connected
+                            to the internet 24/7. I recommend Bluehost for hosting. Bluehost is
+                            the best hosting provider out there for small businesses and personal brands.<br><br>
+
+                            Domain: If you purchase your hosting from Bluehost, it’s free for your first year with any
+                            hosting plan. Moreover, if I am going to use other CMS besides WP you can buy a domain from
+                            godaddy and I will connect to the platform.<br><br>
+
+                            That’s it!
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                            Will you help me write content for my website or app?
+                        </button>
+                    </h2>
+                    <div id="collapse6" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Of course I will help you. As a web & app design + devloper freelancer, copywriting and
+                            editing are included
+                            in my services. If writing is not something you enjoy I can totally write conversion and SEO
+                            optimized copy for your new website or app. Since you are the expert in your industry, I
+                            will have
+                            to ask you a lot of questions to write an amazing copy focused on presenting your brand
+                            message effectively and position you as an industry expert.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                            Who owns the content on my new website, app?
+                        </button>
+                    </h2>
+                    <div id="collapse7" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            When I transfer ownership of your new website, app over to you, I also give you the rights
+                            to the
+                            intellectual property. You own everything.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
+                            Do you offer ongoing support after the project is over?
+                        </button>
+                    </h2>
+                    <div id="collapse8" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Absolutely. At the end of the web & app design + devlopment project, we can discuss how I
+                            can continue to
+                            support your business so you can stay in your zone of genius – growing your business. I take
+                            away all the hassle of maintaining and updating your growing business site.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse9" aria-expanded="true" aria-controls="collapse9">
+                            How soon can we get started?
+                        </button>
+                    </h2>
+                    <div id="collapse9" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            It totally depends on your launch deadline and my availability to take on a new project that
+                            month. We can discuss that on a call if you are ready to move forward with me. Book a <a
+                                href="contact.html">“FREE
+                                CALL”</a> with me and find out your perfect spot!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="top">
+                <div class="info">
+                    <a href="mailto:siddheshbhadale@gmail.com?subject = Know more about your services&body = Message"
+                        class="contact">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span class="siddheshbhadalegmailcom">siddheshbhadale@gmail.com</span>
+                    </a>
+                </div>
+                <div class="links_social">
+                    <a href="https://www.linkedin.com/in/siddhesh-bhadale-a3ab3b21a/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/siddhesh.bhadale/" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=7738963715&text=Hello, more information!"
+                        target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="bottom">
+                <span class="company-name-all">© 2023 Siddhesh Bhadale. All rights reserved</span>
+                <div class="terms-of-use-parent">
+                    <a href="#">Terms Of Use</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <a href="#top" class="scrollup" id="scroll-up">
+        <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+    </a>
+
+
+    <!-- boostrap javascript link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- navbar js -->
+    <script src="assets/js/navbar.js"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- custume js -->
+    <script src="assets/js/custume.js"></script>
+    <script src="assets/js/login.js"></script>
+    <script>
+        change_nav_btn()
+    </script>
+</body>
+
+</html>

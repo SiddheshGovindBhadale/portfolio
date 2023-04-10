@@ -1,0 +1,49 @@
+:root {
+    /* fonts */
+    --font-inter: Inter;
+    --font-oswald: Oswald;
+    --font-arial: Arial;
+  
+    /* font sizes */
+    --font-size-2xs: 0.75rem;
+    --font-size-xs: 0.88rem;
+    --font-size-sm: 1rem;
+    --font-size-base: 1.13rem;
+    --font-size-lg: 1.25rem;
+    --font-size-xl: 1.38rem;
+    --font-size-2xl: 1.63rem;
+  
+    /* Colors */
+    --color-white: #fff;
+    --color-darkblue: #282ec2;
+    --color-gray-100: rgba(0, 0, 0, 0.5);
+    --color-gray-200: rgba(0, 0, 0, 0.75);
+    --color-gray-300: rgba(255, 255, 255, 0.75);
+    --color-tomato: #ff6542;
+    --color-black: #000;
+  
+    /* Gaps */
+    --gap-sm: 0.5rem;
+    --gap-md: 2rem;
+  
+    /* Paddings */
+    --padding-sm: 0.75rem;
+    --padding-md: 1.5rem;
+    --padding-lg: 4rem;
+  
+    /* border radiuses */
+    --br-sm: 5px;
+    --br-md: 20px;
+  }
+
+  a{
+    text-decoration: none !important;
+    color: #000;
+    transition: all .2s ease-in-out;
+  }
+
+  a:hover{
+    transform: scale(1.04);
+    color: #FFFFFF;
+  }
+  

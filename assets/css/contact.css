@@ -1,0 +1,90 @@
+/* form css */
+.contact_form {
+    margin: 6.25rem 0.938rem;
+}
+
+.contact_form form {
+    max-width: 826px;
+    margin: auto;
+}
+
+.contact_form form .group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.438rem;
+    margin-bottom: 2rem;
+}
+
+.contact_form form .group .textbox {
+    max-width: 402px;
+    width: 100%;
+}
+
+.contact_form form label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.063rem;
+    line-height: 150%;
+    text-align: center;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.75);
+    margin-bottom: 0.563rem;
+}
+
+.contact_form input {
+    /* max-width: 395px; */
+    width: 100%;
+    padding: 0.813rem !important;
+}
+
+.contact_form textarea {
+    width: 100%;
+    padding: 0.813rem !important;
+}
+
+.contact_form ::placeholder {
+    font-family: 'Inter' !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 1rem !important;
+    line-height: 150% !important;
+    text-transform: capitalize !important;
+    color: rgba(0, 0, 0, 0.75) !important;
+}
+
+.contact_form .submit_btn {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    gap: 0.5rem;
+    background: linear-gradient(90deg, #F64C72 0%, #FF6542 100%);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.75rem;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 1.5rem;
+}
+
+@media screen and (max-width:688px) {
+    .contact_form {
+        margin: 3.75rem 0.938rem;
+    }
+    
+    .contact_form form .group {
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .contact_form form .group .textbox {
+        max-width: 100%;
+        width: 100%;
+    }
+}

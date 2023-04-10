@@ -1,0 +1,231 @@
+/* services section */
+.services {
+    margin: 3.125rem auto;
+}
+
+
+
+
+/* features css */
+.feartures_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 4.438rem;
+}
+
+.features_boxes {
+    max-width: 1197px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.688rem;
+    margin: 1.5rem 0.938rem;
+}
+
+.features_boxes .box {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 1.938rem 1.813rem 1.625rem 1.813rem;
+    border-radius: 8px;
+}
+
+.features_boxes .box .box_icon img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.875rem;
+}
+
+.features_boxes .box .box_heading {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 150%;
+    text-transform: capitalize;
+    color: #000000;
+    margin-bottom: 0.5rem;
+}
+
+.features_boxes .box .box_para {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (max-width:1000px) {
+    .features_boxes {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:686px) {
+    .features_boxes {
+        grid-template-columns: 1fr;
+    }
+
+    .features_boxes .box .box_para {
+        font-size: 1.063rem;
+    }
+}
+
+.why_me {
+    max-width: 1199.94px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 6.875rem auto;
+}
+
+.why_me_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    padding: 0 0.938rem;
+}
+
+.why_me_heading {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.625rem;
+    line-height: 150%;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.why_me_para {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.75);
+    max-width: 582px;
+}
+
+.why_me .bottom .point i {
+    color: #FF6542;
+    font-size: 1.688rem;
+    display: inline-block;
+    margin-top: 0.313rem;
+    margin-right: 1.188rem;
+}
+
+.why_me .bottom .point {
+    max-width: 625px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.why_me .bottom .point span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.75);
+    display: block;
+}
+
+.why_me .right {
+    max-width: 485.94px;
+    max-height: 324px;
+}
+
+.why_me .right img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width:1000px) {
+    .why_me_container {
+        flex-direction: column;
+    }
+}
+
+
+
+/* FAQ css */
+.faq_section {
+    max-width: 1197px;
+    margin: 6.25rem auto;
+}
+
+.faq_container {
+    width: 100%;
+    padding: 0 0.938rem;
+}
+
+.faq_boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.688rem;
+}
+
+.accordion-button {
+    background: linear-gradient(90deg, #F64C72 0%, #FF6542 100%);
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 100%;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.accordion-button::after {
+    background-image: url(../img/icon/down-arrow.png);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../img/icon/down-arrow.png);
+}
+
+.accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.accordion-button:hover {
+    z-index: 2;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #ffffff;
+}
+
+.accordion-button:not(.collapsed) {
+    box-shadow: none;
+}
+
+.accordion-button {
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-body a:hover{
+    color: #000000;
+}
+
+@media screen and (max-width:950px) {
+    .faq_boxes {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width:530px) {
+    .accordion-button {
+        font-size: 1rem;
+    }
+}
